@@ -17,7 +17,7 @@ const CollaborativeRoom = ({ roomId, roomMetadata, users, currentUserType }: Col
     const [documentTitle, setDocumentTitle] = useState(roomMetadata.title)
 
     const containerRef = useRef<HTMLDivElement>(null)
-    const inputRef = useRef<HTMLDivElement>(null)
+    const inputRef = useRef<HTMLInputElement>(null)
 
     const updateTitleHandler = async (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
